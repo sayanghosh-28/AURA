@@ -79,9 +79,10 @@ body{
 
 #TextInput {
     background-color: #181818a8;
-    border-color: blue;
-    box-shadow: 0 0 20px rgb(25, 0, 255),
+    border-color: rgb(0, 255, 213);
+    box-shadow: 0 0 20px rgb(255, 0, 255),
       inset 0 0 0px rgb(25, 0, 255);
+    animation: gradient 4s ease infinite;
     border-radius: 8px;
     color: white;
     padding: 3px 0px 3px 20px;
@@ -94,7 +95,7 @@ body{
     width: 95%;
     outline: none;
     color: white;
-    font-family: cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   }
   
   

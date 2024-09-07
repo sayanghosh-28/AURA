@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jarvis</title>
 
-    <link rel="shortcut icon" href="assets/img/voice-bot.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon (1).ico" type="image/x-icon">
 
     <!-- Bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,44 +21,46 @@
     <!-- Texllate  -->
     <link rel="stylesheet" href="assets/vendore/texllate/animate.css">
 
+
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <div class="container">
-    
-        <section id="Oval" class="mb-4" hidden>
-    
+
+        <section id="Oval" class="mb-4">
+
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <div class="d-flex justify-content-center align-items-center" style="height: 75vh;">
-    
+
                         <canvas id="canvasOne" width="700" height="400" style="position: absolute;"></canvas>
-    
+
                         <div id="Aura">
-    
+
                             <div class="square">
                                 <span class="circle"></span>
                                 <span class="circle"></span>
                                 <span class="circle"></span>
                             </div>
-    
+
                         </div>
-    
+
                     </div>
                     <br>
                     <h5 class="text-light text text-center">Ask me anything</h5>
-    
+
                     <div class="col-md-12 pt-2">
                         <div class="text-center">
                             <div id="TextInput" class="d-flex">
-    
+
                                 <input type="text" class="input-field" name="chatbox" id="chatbox"
                                     placeholder="Type here ....">
-                                <button id="Micbtn" class="glow-on-hover"><i class="bi bi-mic-fill"></i></button>
-                                <button id="Chatbtn" class="glow-on-hover"><i class="bi bi-chat-dots"></i></button>
-                                <button id="Settingsbtn" class="glow-on-hover"><i class="bi bi-gear"></i></button>
+                                <button id="MicBtn" class="glow-on-hover"><i class="bi bi-mic-fill"></i></button>
+                                <button id="ChatBtn" class="glow-on-hover"><i class="bi bi-chat-dots"></i></button>
+                                <button id="SettingsBtn" class="glow-on-hover"><i class="bi bi-gear"></i></button>
                             </div>
                         </div>
                     </div>
@@ -67,48 +69,52 @@
             </div>
         </section>
 
-        <section id="SiriWave" class="mb-4">
+        <section id="SiriWave" class="mb-4" hidden>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
                             <div class="">
-                                <p class="text-start text-light mb-4 siri-message">hellooooo this is sayan here Whats abiyt you</p>
+                                <p class="text-start text-light mb-4 siri-message" style="font-size: 20px; font-family: 'Algerian', sans-serif;">Hello This is SIRI</p>
                                 <div id="siri-container"></div>
                             </div>
-                            
-                            
+
+
                         </div>
                     </div>
                 </div>
             </div>
 
         </section>
-    
+
     </div>
 
-
+    <!--Jquery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
+    <!-- Particle js -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
     <script src="script.js"></script>
 
+    <!-- Siri wave -->
     <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
 
-
-    <script src="assets/animate/textillate-master/assets/jquery.fittext.js"></script>
-    <script src="assets/animate/textillate-master/assets/jquery.lettering.js"></script>
-    <script src="https://github.com/jschr/textillate/blob/master/jquery.textillate.js"></script>
+    <!-- Texllate js -->
+    <script src="assets/vendore/texllate/assets/jquery.fittext.js"></script>
+    <script src="assets/vendore/texllate/assets/jquery.lettering.js"></script>
+    <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
 
     <script src="main.js"></script>
+    <script src="/controller.js"></script>
     <script src="/eel.js"></script>
 
 
 </body>
+
 </html>
