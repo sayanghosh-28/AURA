@@ -13,7 +13,7 @@ import mysql.connector as sqltor
 import webbrowser
 
 from backend.helper import extract_yt_term
-
+from backend.untitled import google_search
 
 mycon=sqltor.connect(host="localhost",user="root",passwd="sayan2801",database='sayan')
 cursor=mycon.cursor()
@@ -56,8 +56,16 @@ def opencommand(query):
                     speak("Opening "+query)
                     try:
                         os.system('start '+query)
-                    except:
-                        speak("not found")
+                    except Exception as e:
+                        print(f"Error opening application: {e}")
+                        speak("Processing with AI...")
+                    # Use ChatGPT to handle unknown commands
+                        response = google_search(query)
+                        print(f"Google search response: {response}")
+                        speak(response)
+                        #eel.DisplayMessage(response)
+
+                        #print("not found")
         except Exception as e:
             speak("Something went wrong: " + str(e))
         
